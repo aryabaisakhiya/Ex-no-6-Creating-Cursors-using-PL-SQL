@@ -27,7 +27,7 @@ INSERT INTO employee6 VALUES (103, 'Amrutha', 'Sales', 900000);
 ### PLSQL Cursor code
 ```
 DECLARE
-   CURSOR employd_cursor IS
+   CURSOR employee6cursor IS
    SELECT empid,empname,dept,salary
    FROM employd;
    emp_id NUMBER;
