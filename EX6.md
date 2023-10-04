@@ -12,15 +12,16 @@
 
 ### Create employee table
 ```
-CREATE TABLE employd (
+CREATE TABLE employee6 (
   empid NUMBER,
   empname VARCHAR(10),
   dept VARCHAR(10),
   salary NUMBER
 );
-select * from employd;
-INSERT INTO employd VALUES (1, 'John Doe', 'Sales', 100000);
-INSERT INTO employd VALUES (2, 'Jane Doe', 'Marketing', 120000);
+select * from employee6;
+INSERT INTO employee6 VALUES (101, 'Arya', 'HR', 80000);
+INSERT INTO employee6 VALUES (102, 'Varshini', 'Manager', 700000);
+INSERT INTO employee6 VALUES (103, 'Amrutha', 'Sales', 900000);
 ```
 
 ### PLSQL Cursor code
@@ -34,12 +35,12 @@ DECLARE
    emp_dept VARCHAR(50);
    emp_salary NUMBER;
 BEGIN
-  OPEN employd_cursor;
+  OPEN employee6_cursor;
 
   LOOP
-    FETCH employd_cursor INTO emp_id, emp_name, emp_dept, emp_salary;
+    FETCH employee6_cursor INTO emp_id, emp_name, emp_dept, emp_salary;
 
-    EXIT WHEN employd_cursor%NOTFOUND;
+    EXIT WHEN employee6_cursor%NOTFOUND;
 
     DBMS_OUTPUT.PUT_LINE('Employee ID: ' || emp_id);
     DBMS_OUTPUT.PUT_LINE('Employee Name: ' || emp_name);
@@ -47,13 +48,14 @@ BEGIN
     DBMS_OUTPUT.PUT_LINE('Salary: ' || emp_salary);
   END LOOP;
 
-  CLOSE employd_cursor;
+  CLOSE employee6_cursor;
 END;
 /
 ```
 
 ### Output:
-![WhatsApp Image 2023-09-26 at 23 04 09](https://github.com/ShakthiSundar-K/Ex-no-6-Creating-Cursors-using-PL-SQL/assets/128116143/c8816d35-3848-496c-a08b-7b7d27d6620b)
+![dbms ex06 out](https://github.com/aryabaisakhiya/Ex-no-6-Creating-Cursors-using-PL-SQL/assets/119393645/65b5bb4e-28af-4967-a91b-efa25ac421f1)
+
 
 ### Result:
 THE PROGRAM HAS BEEN IMPLEMENTED SUCCESSFULLY
