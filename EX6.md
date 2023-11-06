@@ -57,7 +57,8 @@ END;
 ```
 
 ### Output:
-![dbms ex06 out](https://github.com/aryabaisakhiya/Ex-no-6-Creating-Cursors-using-PL-SQL/assets/119393645/65b5bb4e-28af-4967-a91b-efa25ac421f1)
+![dbms ex06 out]![image](https://github.com/aryabaisakhiya/Ex-no-6-Creating-Cursors-using-PL-SQL/assets/119393645/afb0e8a5-49ee-49e2-9747-a1d08b09490f)
+
 
 
 ### Result:
